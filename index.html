@@ -1,0 +1,735 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  @@include('var/_header.html')
+  <body>
+
+<!--     <header>
+      <div class="container">
+
+
+        <div class="header_mobile">
+
+          <div class="header_mobile_l">
+            <div class="burger_menu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <a href="/search/" class="search_menu">
+              <img src="https://xn--80avidim.xn--p1ai/local/templates/polart/img/svg11.svg" alt="">
+            </a>
+
+
+            <a href="#" class="geo_mob">
+              <svg width="20" height="24" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 2.16178C7.93721 2.16178 5.9589 2.95854 4.50028 4.37677C3.04166 5.79501 2.22222 7.71855 2.22222 9.72424C2.22222 12.8162 4.20222 15.7991 6.37556 18.1099C7.48682 19.2871 8.69937 20.3699 10 21.3467C10.1941 21.2019 10.4219 21.0254 10.6833 20.8173C11.7276 19.9835 12.7103 19.0796 13.6244 18.1121C15.7978 15.7991 17.7778 12.8173 17.7778 9.72424C17.7778 7.71855 16.9583 5.79501 15.4997 4.37677C14.0411 2.95854 12.0628 2.16178 10 2.16178ZM10 24L9.37 23.5787L9.36667 23.5765L9.36 23.5711L9.33778 23.556L9.25445 23.4987L8.95444 23.2859C7.43429 22.1751 6.02208 20.931 4.73556 19.5695C2.46444 17.1517 0 13.6524 0 9.72316C3.95203e-08 7.14442 1.05357 4.67129 2.92893 2.84785C4.8043 1.0244 7.34784 0 10 0C12.6522 0 15.1957 1.0244 17.0711 2.84785C18.9464 4.67129 20 7.14442 20 9.72316C20 13.6524 17.5356 17.1527 15.2644 19.5673C13.9783 20.9288 12.5664 22.1728 11.0467 23.2837C10.9201 23.3757 10.7923 23.4661 10.6633 23.5549L10.64 23.57L10.6333 23.5754L10.6311 23.5765L10 24ZM10 7.56354C9.41063 7.56354 8.8454 7.79118 8.42865 8.19639C8.0119 8.6016 7.77778 9.15119 7.77778 9.72424C7.77778 10.2973 8.0119 10.8469 8.42865 11.2521C8.8454 11.6573 9.41063 11.8849 10 11.8849C10.5894 11.8849 11.1546 11.6573 11.5713 11.2521C11.9881 10.8469 12.2222 10.2973 12.2222 9.72424C12.2222 9.15119 11.9881 8.6016 11.5713 8.19639C11.1546 7.79118 10.5894 7.56354 10 7.56354ZM5.55556 9.72424C5.55556 8.57813 6.02381 7.47897 6.8573 6.66855C7.6908 5.85813 8.82126 5.40284 10 5.40284C11.1787 5.40284 12.3092 5.85813 13.1427 6.66855C13.9762 7.47897 14.4444 8.57813 14.4444 9.72424C14.4444 10.8703 13.9762 11.9695 13.1427 12.7799C12.3092 13.5904 11.1787 14.0456 10 14.0456C8.82126 14.0456 7.6908 13.5904 6.8573 12.7799C6.02381 11.9695 5.55556 10.8703 5.55556 9.72424Z" fill="#343434" />
+              </svg>
+            </a>
+
+          </div>
+
+
+
+
+          <a href="/" class="logo_menu_text">
+            <img src="https://xn--80avidim.xn--p1ai/local/templates/polart/img/logo.png">
+            <span>ПолАрт</span>
+          </a>
+
+
+          <div class="header_mobile_r">
+
+            <div class="social-list_item">
+              <a href="https://t.me/+79137581548" rel="nofollow"><img src="https://xn--80avidim.xn--p1ai/local/templates/polart/img/tg.svg" alt=""></a>
+              <a href="https://wa.me/79137581548" rel="nofollow"><img src="https://xn--80avidim.xn--p1ai/local/templates/polart/img/wh.svg" alt=""></a>
+            </div>
+
+
+            <a href="tel:+7 (383) 263-15-17" class="phone_top-header">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_10425_11763)">
+                  <circle cx="11.9997" cy="11.9997" r="11.9997" fill="#FF8810" />
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.51875 14.4863C12.1185 17.0855 14.5275 17.3701 15.2347 17.3965C16.0894 17.4276 16.9616 16.73 17.3388 16.0154C16.7371 15.3097 15.9535 14.7621 15.0955 14.1686C14.589 14.6743 13.965 15.6139 13.134 15.2773C12.6614 15.0873 11.4944 14.5499 10.4748 13.5298C9.45519 12.5098 8.91767 11.3437 8.72633 10.8718C8.38961 10.0397 9.33214 9.4144 9.83856 8.90808C9.24492 8.03605 8.70672 7.2323 8.00219 6.66109C7.27738 7.03964 6.57556 7.90491 6.60734 8.77085C6.63371 9.47794 6.91836 11.8865 9.51875 14.4863ZM15.1847 18.7478C14.2111 18.712 11.4518 18.3307 8.56203 15.4422C5.67293 12.553 5.29227 9.79498 5.25576 8.82088C5.20167 7.3364 6.33892 5.89452 7.65263 5.33142C7.81083 5.26312 7.98407 5.23712 8.15536 5.25596C8.32664 5.27481 8.49008 5.33785 8.62964 5.4389C9.71685 6.23184 10.4667 7.43307 11.111 8.37405C11.2451 8.56971 11.3065 8.80607 11.2846 9.04223C11.2628 9.27838 11.159 9.49946 10.9914 9.66721L10.0745 10.5845C10.2875 11.0543 10.7209 11.8642 11.4308 12.574C12.1408 13.2838 12.9508 13.7171 13.4214 13.93L14.3375 13.0134C14.5057 12.845 14.7278 12.7412 14.9649 12.7201C15.202 12.6989 15.439 12.7618 15.6343 12.8978C16.5944 13.5629 17.7222 14.3018 18.5444 15.3543C18.6537 15.4949 18.7232 15.6622 18.7457 15.8388C18.7681 16.0153 18.7428 16.1947 18.6722 16.3582C18.1062 17.6784 16.6742 18.8025 15.1847 18.7478Z" fill="white" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_10425_11763">
+                    <rect width="24" height="24" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+              +7 (383) 263-15-17
+            </a> 
+
+          </div>
+
+
+
+        </div>
+
+
+        <nav class="mobile-nav" id="mobile-nav">
+
+          <div class="search_close-mob_section">
+            <form id="sef" class="search_form-top search_form-top-m" action="/search/">
+              <input type="text" name="q" placeholder="Я ищу..." class="find_input-site">
+              <button class="find_input-btn">
+                <img src="/local/templates/polart/img/logosearch.svg" alt="">
+              </button>
+            </form>
+            <div class="close_m1">
+              <img src="/local/templates/polart/img/close.svg">
+            </div>
+          </div>
+
+          <div class="salon_block">
+            <a href="#salonadress" class="salon_btn mobile-salon1">Адреса салонов</a>
+          </div>
+
+
+
+          <ul>
+            <li>
+              <a href="/napolnye-pokrytiya.php" class="menu-item" data-submenu="submenu1">Напольные покрытия</a>
+              <ul class="submenu" id="submenu1">
+
+<div class="current_submenu-title">Напольные покрытия</div>
+<li><a href="/catalog/laminat/">Ламинат</a>
+
+
+</li>
+
+<li><a class="mobile_sub_sub_menu" href="/catalog/spc-laminat/">SPC ламинат </a>
+
+  <script>
+    $(".mobile_sub_sub_menu_item_blok_main").on('click',function(){ 
+      $(this).find(".mobile_sub_sub_menu_item_blok").toggleClass("show_menu"); 
+      $(this).find('.row_menu_item').toggleClass('rotate');
+    });
+  </script>
+</li>
+<li><a href="/catalog/kvercenilovaya_plitka/">Кварцвиниловая плитка</a>
+</li>
+<li>
+  <a href="#" class="menu-item" data-submenu="submenu2">Интерьерный декор</a>
+  <ul class="submenu" id="submenu2">
+    <li><a href="/catalog/stenovye-paneli/">Стеновые панели</a>
+
+
+      <script>
+        $(".mobile_sub_sub_menu_item_blok_main").on('click',function(){ 
+          $(this).find(".mobile_sub_sub_menu_item_blok").toggleClass("show_menu"); 
+          $(this).find('.row_menu_item').toggleClass('rotate');
+        });
+      </script>
+    </li>
+    <li><a href="/catalog/interyernye-reyki/">Интерьерные рейки</a></li>
+    <li><a href="/catalog/karnizy-moldingi/">Молдинг</a>
+
+
+    </li>
+    <li><a href="/catalog/plintus/">Плинтус</a>
+
+
+    </li>
+    <li><a href="/catalog/karniz_potolochnij/">Карниз потолочный</a></li>
+  </ul>
+</li>
+
+<li>
+  <a href="/catalog/soputsvuyuchie-materialy/" class="menu-item" data-submenu="submenu3">Сопутствующие товары</a>
+  <ul class="submenu" id="submenu3">
+    <li><a href="/catalog/podlojka/">Подложка</a></li>
+    <li><a href="/catalog/kley/">Клей для ПВХ плитки</a></li>
+    <li><a href="/catalog/shpatel/">Шпатель</a></li>
+    <li><a href="/catalog/plintus/">Плинтус</a>
+
+
+    </li>
+  </ul>
+</li>
+
+<li><a class="seller_item_menu" href="/catalog/aktcyy/">Акции</a></li>
+<li>
+  <a href="#" class="menu-item" data-submenu="submenu4">Услуги и сервис</a>
+  <ul class="submenu" id="submenu4">
+    <li><a href="/montazh-napolnogo-pokrytiya/">Монтаж напольного покрытия</a></li>
+  </ul>
+</li>
+<li>
+  <a href="#" class="menu-item letactive" data-submenu="submenu5">Сотрудничество</a>
+  <ul class="submenu" id="submenu5">
+    <li><a href="/designer-page/">Дизайнерам</a></li>
+    <li><a href="/remontnym-organizaciyam/">Ремонтным организациям</a></li>
+    <li><a href="/vladelcam-kommercheskih-pomecheniy/">Владельцам коммерческих помещений</a></li>
+  </ul>
+</li>
+<li><a href="/our-company/">О компании</a></li>
+<li><a href="/our-projects/">Наши проекты</a></li>
+<li><a href="/articles/">Блог</a></li>
+<li><a href="/reviewlist/">Отзывы</a></li>
+<li><a href="/dostavka-i-olpata/">Доставка и оплата</a></li>
+<li><a href="/garantee/">Гарантии</a></li>
+<li><a href="/contacts/">Контакты</a></li>
+
+<li><a class="show_modal-call m_pokrytie" data-modal="modal_1"  href="#">Подобрать покрытие</a></li>
+<li><a class="m_ykladka" data-modal="modal_2" href="#">Консультация укладчика</a></li>
+
+</ul>
+
+<div class="bottom_nav-info">
+
+  <img src="/local/templates/polart/img/logo.png" alt="">
+
+  <p>Звонки и чат без перерыва и выходных 10:00–20:00 по НСК</p>
+
+  <a class="bt_site-num" href="tel:+7  (383)  263-15-17">+7  (383)  263-15-17</a>
+
+  <div class="bottom_nav-info_list">
+    <a href="https://t.me/+79137581548" rel="nofollow"><img src="/local/templates/polart/img/tg.svg"></a>
+    <a href="https://wa.me/79137581548" rel="nofollow"><img src="/local/templates/polart/img/wh.svg"></a>
+  </div>
+
+  <div class="text_io">
+    ИП Черных И.А. ИНН 880100650340
+  </div>
+
+</div>
+
+</nav>
+
+<div class="submenu-overlay" id="submenu-overlay">
+  <div class="search_close-mob_section">
+    <form id="sef2" class="search_form-top search_form-top-m" action="">
+      <input type="text" placeholder="Я ищу..." class="find_input-site">
+      <button class="find_input-btn">
+        <img src="/local/templates/polart/img/logosearch.svg" alt="">
+      </button>
+    </form>
+    <div class="close_m1">
+      <img src="/local/templates/polart/img/close.svg">
+    </div>
+  </div>
+  <div class="submenu-container">
+    <a href="#" class="back-button" id="back-button">Назад</a>
+    <div id="submenu-content"></div>
+    <div class="bottom_nav-info">
+
+      <img src="/local/templates/polart/img/logo.png" alt="">
+
+      <p>Звонки и чат без перерыва и выходных 10:00–20:00 по НСК</p>
+
+      <a class="bt_site-num" href="tel:+7  (383)  263-15-17">+7  (383)  263-15-17</a>
+
+      <div class="bottom_nav-info_list">
+        <a href="https://t.me/+79137581548" rel="nofollow"><img src="/local/templates/polart/img/tg.svg"></a>
+        <a href="https://wa.me/79137581548" rel="nofollow"><img src="/local/templates/polart/img/wh.svg"></a>
+      </div>
+
+      <div class="text_io">
+        ИП Черных И.А. ИНН 880100650340
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+<div class="header_top-items">
+  <div class="logo_item">
+    <a href="/"><img src="https://xn--80avidim.xn--p1ai/local/templates/polart/img/logosv.svg" alt=""></a>
+    <div class="logo_description">
+
+     <p>Салон <b class="makebold">напольных покрытий и интерьерного декора </b></p>
+     <p >Помогаем с выбором, доставляем и укладываем <b class="makebold"> <br>с 2016 года</b></p>                     
+   </div>
+ </div>
+ 
+ <div class="menu_top_and_searchbar-item">
+
+  <a class="" href=""></a>
+
+  <div class="menu_top_and_searchbar_socials">
+    <p class="menu_top_and_searchbar-item-title" >НАПОЛЬНЫЕ ПОКРЫТИЯ В НОВОСИБИРСКЕ</p>
+    <div class="social-list_item">
+      <a href="https://t.me/+79137581548" rel="nofollow"><img src="https://xn--80avidim.xn--p1ai/local/templates/polart/img/tg.svg" alt=""></a>
+      <a href="https://wa.me/79137581548" rel="nofollow"><img src="https://xn--80avidim.xn--p1ai/local/templates/polart/img/wh.svg" alt=""></a>
+    </div> 
+  </div>
+
+  <ul class="menu_top-header">
+    <li class="menu_top_header-item">
+      <a href="/our-company/" class="mtop_link-header">О компании</a>
+    </li>
+
+    <li class="menu_top_header-item">
+      <a href="/our-projects/" class="mtop_link-header">Наши проекты</a>
+    </li>
+    <li class="menu_top_header-item">
+      <a href="/articles/" class="mtop_link-header">Блог</a>
+    </li>
+    <li class="menu_top_header-item">
+      <a href="/reviewlist/" class="mtop_link-header">Отзывы</a>
+    </li>
+
+    <li class="menu_top_header-item">
+      <a href="/dostavka-i-olpata/" class="mtop_link-header">Доставка и оплата</a>
+    </li>
+
+    <li class="menu_top_header-item">
+      <a href="/garantee/" class="mtop_link-header">Гарантии</a>
+    </li>
+
+    <li class="menu_top_header-item">
+      <a href="/contacts/" class="mtop_link-header">Контакты</a>
+    </li>
+  </ul>
+
+  <div class="searchbar_and_other-elements">
+
+    <div class="burger__cat">
+      <svg width="22" height="12" viewBox="0 0 22 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="22" height="2" rx="1" fill="white" />
+        <rect y="5" width="22" height="2" rx="1" fill="white" />
+        <rect y="10" width="22" height="2" rx="1" fill="white" />
+      </svg>
+      Каталог
+    </div>
+
+          <div class="salon_block">
+            <a href="/#salonadress" class="salon_btn">Адреса салонов</a>
+          </div>
+
+          <form id="sef3" class="search_form-top" action="/search/">
+            <input name="q" type="text" placeholder="Я ищу..." class="find_input-site">
+            <button class="find_input-btn">
+              <img src="/local/templates/polart/img/logosearch.svg" alt="">
+            </button>
+          </form>
+
+          <div class="consulting_btns">
+            <a href="#" data-modal="modal_1" class="show_modal-call make_consult1">Подобрать покрытие</a>
+            <a href="#" data-modal="modal_2" class="make_consult2 ">Консультация укладчика</a>
+          </div>
+
+        </div>
+      </div>
+
+
+
+      <div class="calls_info_item _last">
+
+
+
+        <div class="calls_info_item-text">
+          <p>
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 9.98828C1 11.1702 1.23279 12.3405 1.68508 13.4324C2.13738 14.5244 2.80031 15.5165 3.63604 16.3522C4.47177 17.188 5.46392 17.8509 6.55585 18.3032C7.64778 18.7555 8.8181 18.9883 10 18.9883C11.1819 18.9883 12.3522 18.7555 13.4442 18.3032C14.5361 17.8509 15.5282 17.188 16.364 16.3522C17.1997 15.5165 17.8626 14.5244 18.3149 13.4324C18.7672 12.3405 19 11.1702 19 9.98828C19 7.60133 18.0518 5.31215 16.364 3.62432C14.6761 1.93649 12.3869 0.988281 10 0.988281C7.61305 0.988281 5.32387 1.93649 3.63604 3.62432C1.94821 5.31215 1 7.60133 1 9.98828Z" stroke="#1A1A1A" stroke-opacity="0.4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M10 4.98828V9.98828L13 12.9883" stroke="#1A1A1A" stroke-opacity="0.4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            Звонки и&nbsp;чат&nbsp;без&nbsp;перерыва <br> и&nbsp;выходных 10:00–20:00&nbsp;по&nbsp;НСК
+          </p>
+
+          <div class="phone_top_calls-w">
+           <a href="tel:+7 (383) 263-15-17" class="phone_top-header">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_10425_11763)">
+                <circle cx="11.9997" cy="11.9997" r="11.9997" fill="#FF8810" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.51875 14.4863C12.1185 17.0855 14.5275 17.3701 15.2347 17.3965C16.0894 17.4276 16.9616 16.73 17.3388 16.0154C16.7371 15.3097 15.9535 14.7621 15.0955 14.1686C14.589 14.6743 13.965 15.6139 13.134 15.2773C12.6614 15.0873 11.4944 14.5499 10.4748 13.5298C9.45519 12.5098 8.91767 11.3437 8.72633 10.8718C8.38961 10.0397 9.33214 9.4144 9.83856 8.90808C9.24492 8.03605 8.70672 7.2323 8.00219 6.66109C7.27738 7.03964 6.57556 7.90491 6.60734 8.77085C6.63371 9.47794 6.91836 11.8865 9.51875 14.4863ZM15.1847 18.7478C14.2111 18.712 11.4518 18.3307 8.56203 15.4422C5.67293 12.553 5.29227 9.79498 5.25576 8.82088C5.20167 7.3364 6.33892 5.89452 7.65263 5.33142C7.81083 5.26312 7.98407 5.23712 8.15536 5.25596C8.32664 5.27481 8.49008 5.33785 8.62964 5.4389C9.71685 6.23184 10.4667 7.43307 11.111 8.37405C11.2451 8.56971 11.3065 8.80607 11.2846 9.04223C11.2628 9.27838 11.159 9.49946 10.9914 9.66721L10.0745 10.5845C10.2875 11.0543 10.7209 11.8642 11.4308 12.574C12.1408 13.2838 12.9508 13.7171 13.4214 13.93L14.3375 13.0134C14.5057 12.845 14.7278 12.7412 14.9649 12.7201C15.202 12.6989 15.439 12.7618 15.6343 12.8978C16.5944 13.5629 17.7222 14.3018 18.5444 15.3543C18.6537 15.4949 18.7232 15.6622 18.7457 15.8388C18.7681 16.0153 18.7428 16.1947 18.6722 16.3582C18.1062 17.6784 16.6742 18.8025 15.1847 18.7478Z" fill="white" />
+              </g>
+              <defs>
+                <clipPath id="clip0_10425_11763">
+                  <rect width="24" height="24" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+            +7 (383) 263-15-17
+          </a> 
+          <a href="#" data-modal="modal_1" class="show_modal-call callback-header">Перезвоните мне</a>
+        </div>
+
+      </div>
+
+
+
+
+      <div class="calls_info_actions">
+        <a href="/#salonadress" class="info_actions_btn_or">
+          <svg width="18" height="23" viewBox="0 0 18 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.115 20.811C7.721 21.311 8.353 21.768 9 22.214C9.6484 21.7739 10.2773 21.3058 10.885 20.811C11.898 19.9792 12.8513 19.0773 13.738 18.112C15.782 15.877 18 12.637 18 9C18 7.8181 17.7672 6.64778 17.3149 5.55585C16.8626 4.46392 16.1997 3.47177 15.364 2.63604C14.5282 1.80031 13.5361 1.13738 12.4442 0.685084C11.3522 0.232792 10.1819 0 9 0C7.8181 0 6.64778 0.232792 5.55585 0.685084C4.46392 1.13738 3.47177 1.80031 2.63604 2.63604C1.80031 3.47177 1.13738 4.46392 0.685084 5.55585C0.232792 6.64778 -1.76116e-08 7.8181 0 9C0 12.637 2.218 15.876 4.262 18.112C5.14862 19.0777 6.10196 19.9789 7.115 20.811ZM9 12.25C8.13805 12.25 7.3114 11.9076 6.7019 11.2981C6.09241 10.6886 5.75 9.86195 5.75 9C5.75 8.13805 6.09241 7.3114 6.7019 6.7019C7.3114 6.09241 8.13805 5.75 9 5.75C9.86195 5.75 10.6886 6.09241 11.2981 6.7019C11.9076 7.3114 12.25 8.13805 12.25 9C12.25 9.86195 11.9076 10.6886 11.2981 11.2981C10.6886 11.9076 9.86195 12.25 9 12.25Z" fill="white" />
+          </svg>
+          Адреса салонов
+        </a>
+        <a href="#" class="info_actions_btn_gr">Сотрудничество</a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="menu_site-items">
+
+<ul class="menu_site-items-list">
+  <li>
+    <a class="napolnye_punkt">Напольные покрытия</a>
+
+    <div class="submenu_type-1">
+      <div class="sub_left1">
+        <div class="sub_inner_menu-item active laminacontent">
+          <a href="/catalog/laminat/" class="submenu_type-1-link">Ламинат</a>
+        </div>
+        <div class="sub_inner_menu-item laminacontent2">
+          <a href="/catalog/spc-laminat/" class="submenu_type-1-link">SPC ламинат</a>
+        </div>
+        <div class="sub_inner_menu-item laminacontent3">
+          <a href="/catalog/kvercenilovaya_plitka/" class="submenu_type-1-link">Кварцвиниловая плитка</a>
+        </div>
+      </div>
+      
+
+
+
+
+
+
+    </div></li><li class="makerl-menu"><a class="napolnye_punkt" href="#">Интерьерный декор</a>
+
+      <div class="submenu_type-1">
+        <div class="sub_left1">
+          <div class="sub_inner_menu-item ">
+            <a href="/catalog/stenovye-paneli/" class="submenu_type-1-link">Стеновые панели</a>
+          </div>
+          <div class="sub_inner_menu-item ">
+            <a href="/catalog/interyernye-reyki/" class="submenu_type-1-link">Интерьерные рейки</a>
+          </div>
+          <div class="sub_inner_menu-item ">
+            <a href="/catalog/karnizy-moldingi/" class="submenu_type-1-link">Молдинг</a>
+          </div> 
+          <div class="sub_inner_menu-item ">
+           <a href="/catalog/karniz_potolochnij/" class="submenu_type-1-link">Карниз потолочный</a>
+         </div> 
+       </div>
+
+
+
+
+
+
+
+     </div>
+
+   </li>
+
+   <li class="makerl-menu"><a class="napolnye_punkt" href="/catalog/soputsvuyuchie-materialy/">Сопутствующие товары</a>
+    <div class="submenu_type-1">
+      <div class="sub_left1">
+        <div class="sub_inner_menu-item ">
+          <a href="/catalog/podlojka/" class="submenu_type-1-link">Подложка</a>
+        </div>
+        <div class="sub_inner_menu-item ">
+          <a href="/catalog/kley/" class="submenu_type-1-link">Клей</a>
+        </div>
+        <div class="sub_inner_menu-item ">
+          <a href="/catalog/shpatel/" class="submenu_type-1-link">Шпатель</a>
+        </div>
+        <div class="sub_inner_menu-item ">
+          <a href="/catalog/plintus/" class="submenu_type-1-link">Плинтус</a>
+        </div>
+
+      </div>
+    </div>
+  </li>
+  <li><a class="sellers_link" href="/catalog/aktcyy/">Акции</a></li>
+  <li class="makerl-menu"><a class="napolnye_punkt" href="#">Услуги и сервис</a>
+    <div class="submenu_type-1">
+      <div class="sub_left1">
+        <div class="sub_inner_menu-item ">
+          <a href="/montazh-napolnogo-pokrytiya/" class="submenu_type-1-link">Монтаж напольного покрытия</a>
+        </div>
+      </div>
+
+    </div>
+  </li>
+  <li class="makerl-menu"><a class="btn_make-1 napolnye_punkt" href="#">Сотрудничество</a>
+    <div class="submenu_type-1">
+      <div class="sub_left1">
+        <div class="sub_inner_menu-item ">
+          <a href="/designer-page/" class="submenu_type-1-link">Дизайнерам</a>
+        </div>
+        <div class="sub_inner_menu-item ">
+          <a href="/remontnym-organizaciyam/" class="submenu_type-1-link">Ремонтным организациям</a>
+        </div>
+        <div class="sub_inner_menu-item ">
+          <a href="/vladelcam-kommercheskih-pomecheniy/" class="submenu_type-1-link">Владельцам коммерческих помещенй</a>
+        </div>
+      </div>
+
+    </div>
+  </li>
+</ul>
+</div>
+
+</div>
+</header> -->
+
+
+
+<section class="quiz_block-thanks wishlist page1 proj1 contc">
+  <div class="container">
+    <h2 class="adresses__h2">Приезжайте к нам в салон</h2>
+    <div class="adresses__row adresses__tabs">
+      <ul class="tabs__list">
+        <li class="tabs__list-item active">ТВК Калейдоскоп</li>
+        <li class="tabs__list-item">ТЦ Практика Уюта</li>  
+      </ul>
+      <ul class="adresses__left tabs__content-list">
+        <li class="adresses-item tabs__content-list-item active">
+          <div class="adresses-item__l">  
+            <div class="adresses-item__inn">          
+              
+              <div class="adresses-item__content">
+                <div class="adresses-item__title">ТРЦ KLP, 2-й этаж</div>
+                <div class="adresses-item__item">
+                  <div class="adresses-item__lbl">Адрес:</div>
+                  <div class="adresses-item__text">г. Новосибирск, <br> Площадь К. Маркса, 6/1</div>
+                </div>
+                <div class="adresses-item__item">
+                  <div class="adresses-item__lbl">График работы:</div>
+                  <div class="adresses-item__text">Ежедневно, 10:00-21:00</div>
+                </div>
+                <div class="adresses-item__item">
+                  <div class="adresses-item__lbl">Телефон:</div>
+                  <a href="tel:+7 (383) 264-20-36" class="adresses-item__tel">+7 (383) 264-20-36</a>
+                  <div class="adresses-item__socs">
+                    <a href="">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_6440_227294)">
+                          <path d="M12 24C18.6274 24 24 18.6274 24 12C24 5.3726 18.6274 0 12 0C5.3726 0 0 5.3726 0 12C0 18.6274 5.3726 24 12 24Z" fill="#2AC0A2" />
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.3948 18.6767H12.3918C11.1976 18.6762 10.0241 18.3766 8.98187 17.8081L5.19922 18.8004L6.21152 15.1028C5.58707 14.0207 5.25852 12.7931 5.25902 11.5355C5.26062 7.60122 8.46162 4.40039 12.3947 4.40039C14.3035 4.40122 16.0951 5.14432 17.4423 6.49312C18.7895 7.84182 19.531 9.63457 19.5303 11.5412C19.5287 15.4745 16.329 18.6751 12.3948 18.6767ZM9.15717 16.5163L9.37372 16.6449C10.2843 17.1852 11.3281 17.4712 12.3924 17.4716H12.3948C15.6636 17.4716 18.3242 14.811 18.3255 11.5407C18.3261 9.95602 17.7098 8.46592 16.5901 7.34487C15.4703 6.22382 13.9812 5.60617 12.3971 5.60562C9.12567 5.60562 6.46512 8.26597 6.46382 11.5359C6.46337 12.6566 6.77692 13.748 7.37057 14.6922L7.51162 14.9166L6.91247 17.1052L9.15717 16.5163ZM15.7454 13.0774C15.8698 13.1375 15.9538 13.1781 15.9896 13.238C16.0342 13.3123 16.0342 13.6693 15.8857 14.0858C15.737 14.5023 15.0247 14.8824 14.6822 14.9336C14.375 14.9795 13.9863 14.9986 13.5592 14.8629C13.3002 14.7808 12.9682 14.6711 12.5428 14.4873C10.8713 13.7656 9.74172 12.1456 9.52822 11.8394C9.51327 11.818 9.50282 11.803 9.49697 11.7952L9.49557 11.7933C9.40122 11.6674 8.76897 10.8238 8.76897 9.95077C8.76897 9.12952 9.17237 8.69907 9.35807 8.50092C9.37082 8.48732 9.38252 8.47482 9.39297 8.46342C9.55642 8.28492 9.74957 8.24027 9.86842 8.24027C9.98727 8.24027 10.1063 8.24137 10.2102 8.24657C10.223 8.24722 10.2363 8.24717 10.2501 8.24707C10.354 8.24647 10.4835 8.24572 10.6113 8.55267C10.6605 8.67077 10.7324 8.84592 10.8083 9.03062C10.9617 9.40412 11.1312 9.81677 11.161 9.87652C11.2056 9.96577 11.2353 10.0698 11.1759 10.1889C11.167 10.2067 11.1587 10.2236 11.1508 10.2397C11.1062 10.3308 11.0734 10.3978 10.9976 10.4863C10.9678 10.5211 10.937 10.5586 10.9062 10.5961C10.8449 10.6708 10.7836 10.7455 10.7302 10.7987C10.6409 10.8876 10.548 10.984 10.652 11.1625C10.756 11.341 11.1138 11.9249 11.6438 12.3976C12.2136 12.9058 12.7088 13.1206 12.9598 13.2295C13.0088 13.2508 13.0485 13.268 13.0777 13.2826C13.2559 13.3719 13.3599 13.3569 13.4639 13.238C13.5679 13.119 13.9096 12.7173 14.0284 12.5389C14.1473 12.3604 14.2662 12.3902 14.4296 12.4496C14.5931 12.5092 15.4696 12.9405 15.6479 13.0297C15.6827 13.0471 15.7153 13.0629 15.7454 13.0774Z" fill="white" />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_6440_227294">
+                            <rect width="24" height="24" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </a>
+                    <a href="">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_6440_227295)">
+                          <path d="M12.2574 0.671875C9.1775 0.671875 6.22371 1.89537 4.04587 4.07322C1.86803 6.25106 0.644531 9.20484 0.644531 12.2848C0.644531 15.3647 1.86803 18.3185 4.04587 20.4963C6.22371 22.6742 9.1775 23.8977 12.2574 23.8977C15.3374 23.8977 18.2912 22.6742 20.469 20.4963C22.6468 18.3185 23.8703 15.3647 23.8703 12.2848C23.8703 9.20484 22.6468 6.25106 20.469 4.07322C18.2912 1.89537 15.3374 0.671875 12.2574 0.671875Z" fill="#FF8810" />
+                          <path d="M17.7784 6.84229L15.7241 17.4606C15.7241 17.4606 15.6359 17.9458 15.0414 17.9458C14.7255 17.9458 14.5627 17.7937 14.5627 17.7937L10.113 14.0557L7.93595 12.9448L5.14192 12.1925C5.14192 12.1925 4.64453 12.0471 4.64453 11.6307C4.64453 11.2837 5.15618 11.1183 5.15618 11.1183L16.8456 6.41702C16.845 6.41647 17.2026 6.28656 17.4631 6.28711C17.6232 6.28711 17.8058 6.35651 17.8058 6.5647C17.8058 6.70349 17.7784 6.84229 17.7784 6.84229Z" fill="white" />
+                          <path d="M11.7776 15.4523L9.89883 17.3254C9.89883 17.3254 9.81712 17.3892 9.70799 17.392C9.67015 17.3931 9.62957 17.387 9.58789 17.3681L10.1165 14.0566L11.7776 15.4523Z" fill="white" />
+                          <path d="M15.5584 8.61853C15.4658 8.49638 15.2947 8.47417 15.174 8.56689L7.9375 12.9515C7.9375 12.9515 9.0924 16.2228 9.26844 16.7892C9.44502 17.356 9.5865 17.3694 9.5865 17.3694L10.1151 14.0575L15.5069 9.00718C15.6275 8.91446 15.65 8.74068 15.5584 8.61853Z" fill="#B7ABA4" />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_6440_227295">
+                            <rect width="24" height="24" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="adresses-item__r">
+            <div class="adresses-photo"><img src="img/adresses-photo-1.jpg"></div>
+            <div class="adresses-photo"><img src="img/adresses-photo-2.jpg"></div>
+          </div>
+          <div class="adresses__map adresses__sm-map">
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A45c23e30721c80e59076481c3aef8cf4c63fa514d9b7ca611865315424371e29&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=false"></script>
+          </div>
+        </li>
+        <li class="adresses-item tabs__content-list-item">
+          <div class="adresses-item__l">   
+            <div class="adresses-item__inn">         
+              <div class="adresses-item__content">
+                <div class="adresses-item__title">ТЦ Практика Уюта, 2 этаж</div>
+                <div class="adresses-item__item">
+                  <div class="adresses-item__lbl">Адрес:</div>
+                  <div class="adresses-item__text">г. Новосибирск, <br> Проспект Дзержинского, 1/4</div>
+                </div>
+                <div class="adresses-item__item">
+                  <div class="adresses-item__lbl">График работы:</div>
+                  <div class="adresses-item__text">Ежедневно, 10:00-21:00</div>
+                </div>
+                <div class="adresses-item__item">
+                  <div class="adresses-item__lbl">Телефон:</div>
+                  <a href="tel:+7 (383) 263-15-17" class="adresses-item__tel">+7 (383) 263-15-17</a>
+                  <div class="adresses-item__socs">
+                    <a href="">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_6440_227294)">
+                          <path d="M12 24C18.6274 24 24 18.6274 24 12C24 5.3726 18.6274 0 12 0C5.3726 0 0 5.3726 0 12C0 18.6274 5.3726 24 12 24Z" fill="#2AC0A2" />
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.3948 18.6767H12.3918C11.1976 18.6762 10.0241 18.3766 8.98187 17.8081L5.19922 18.8004L6.21152 15.1028C5.58707 14.0207 5.25852 12.7931 5.25902 11.5355C5.26062 7.60122 8.46162 4.40039 12.3947 4.40039C14.3035 4.40122 16.0951 5.14432 17.4423 6.49312C18.7895 7.84182 19.531 9.63457 19.5303 11.5412C19.5287 15.4745 16.329 18.6751 12.3948 18.6767ZM9.15717 16.5163L9.37372 16.6449C10.2843 17.1852 11.3281 17.4712 12.3924 17.4716H12.3948C15.6636 17.4716 18.3242 14.811 18.3255 11.5407C18.3261 9.95602 17.7098 8.46592 16.5901 7.34487C15.4703 6.22382 13.9812 5.60617 12.3971 5.60562C9.12567 5.60562 6.46512 8.26597 6.46382 11.5359C6.46337 12.6566 6.77692 13.748 7.37057 14.6922L7.51162 14.9166L6.91247 17.1052L9.15717 16.5163ZM15.7454 13.0774C15.8698 13.1375 15.9538 13.1781 15.9896 13.238C16.0342 13.3123 16.0342 13.6693 15.8857 14.0858C15.737 14.5023 15.0247 14.8824 14.6822 14.9336C14.375 14.9795 13.9863 14.9986 13.5592 14.8629C13.3002 14.7808 12.9682 14.6711 12.5428 14.4873C10.8713 13.7656 9.74172 12.1456 9.52822 11.8394C9.51327 11.818 9.50282 11.803 9.49697 11.7952L9.49557 11.7933C9.40122 11.6674 8.76897 10.8238 8.76897 9.95077C8.76897 9.12952 9.17237 8.69907 9.35807 8.50092C9.37082 8.48732 9.38252 8.47482 9.39297 8.46342C9.55642 8.28492 9.74957 8.24027 9.86842 8.24027C9.98727 8.24027 10.1063 8.24137 10.2102 8.24657C10.223 8.24722 10.2363 8.24717 10.2501 8.24707C10.354 8.24647 10.4835 8.24572 10.6113 8.55267C10.6605 8.67077 10.7324 8.84592 10.8083 9.03062C10.9617 9.40412 11.1312 9.81677 11.161 9.87652C11.2056 9.96577 11.2353 10.0698 11.1759 10.1889C11.167 10.2067 11.1587 10.2236 11.1508 10.2397C11.1062 10.3308 11.0734 10.3978 10.9976 10.4863C10.9678 10.5211 10.937 10.5586 10.9062 10.5961C10.8449 10.6708 10.7836 10.7455 10.7302 10.7987C10.6409 10.8876 10.548 10.984 10.652 11.1625C10.756 11.341 11.1138 11.9249 11.6438 12.3976C12.2136 12.9058 12.7088 13.1206 12.9598 13.2295C13.0088 13.2508 13.0485 13.268 13.0777 13.2826C13.2559 13.3719 13.3599 13.3569 13.4639 13.238C13.5679 13.119 13.9096 12.7173 14.0284 12.5389C14.1473 12.3604 14.2662 12.3902 14.4296 12.4496C14.5931 12.5092 15.4696 12.9405 15.6479 13.0297C15.6827 13.0471 15.7153 13.0629 15.7454 13.0774Z" fill="white" />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_6440_227294">
+                            <rect width="24" height="24" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </a>
+                    <a href="">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_6440_227295)">
+                          <path d="M12.2574 0.671875C9.1775 0.671875 6.22371 1.89537 4.04587 4.07322C1.86803 6.25106 0.644531 9.20484 0.644531 12.2848C0.644531 15.3647 1.86803 18.3185 4.04587 20.4963C6.22371 22.6742 9.1775 23.8977 12.2574 23.8977C15.3374 23.8977 18.2912 22.6742 20.469 20.4963C22.6468 18.3185 23.8703 15.3647 23.8703 12.2848C23.8703 9.20484 22.6468 6.25106 20.469 4.07322C18.2912 1.89537 15.3374 0.671875 12.2574 0.671875Z" fill="#FF8810" />
+                          <path d="M17.7784 6.84229L15.7241 17.4606C15.7241 17.4606 15.6359 17.9458 15.0414 17.9458C14.7255 17.9458 14.5627 17.7937 14.5627 17.7937L10.113 14.0557L7.93595 12.9448L5.14192 12.1925C5.14192 12.1925 4.64453 12.0471 4.64453 11.6307C4.64453 11.2837 5.15618 11.1183 5.15618 11.1183L16.8456 6.41702C16.845 6.41647 17.2026 6.28656 17.4631 6.28711C17.6232 6.28711 17.8058 6.35651 17.8058 6.5647C17.8058 6.70349 17.7784 6.84229 17.7784 6.84229Z" fill="white" />
+                          <path d="M11.7776 15.4523L9.89883 17.3254C9.89883 17.3254 9.81712 17.3892 9.70799 17.392C9.67015 17.3931 9.62957 17.387 9.58789 17.3681L10.1165 14.0566L11.7776 15.4523Z" fill="white" />
+                          <path d="M15.5584 8.61853C15.4658 8.49638 15.2947 8.47417 15.174 8.56689L7.9375 12.9515C7.9375 12.9515 9.0924 16.2228 9.26844 16.7892C9.44502 17.356 9.5865 17.3694 9.5865 17.3694L10.1151 14.0575L15.5069 9.00718C15.6275 8.91446 15.65 8.74068 15.5584 8.61853Z" fill="#B7ABA4" />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_6440_227295">
+                            <rect width="24" height="24" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="adresses-item__r">
+            <div class="adresses-photo"><img src="img/adresses-photo-33.jpg"></div>
+            <div class="adresses-photo"><img src="img/adresses-photo-4.jpg"></div>
+          </div>
+
+          <div class="adresses__map adresses__sm-map">
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A7f4996f158a4ecd6b63b6153f4ec52d079073309e8d45a0dc966fa2e3648f8cf&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=false"></script>
+          </div>
+        </li>
+      </ul>
+      <div class="adresses__big-map adresses__map">
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aab3308c91361a33510c14a613e353514d0caaf5ad717d06d3891bf97fb50572c&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;scroll=false"></script>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<script>
+  jQuery(document).ready(function( $ ) {
+    function tabs(element) {    
+      $(element).find('.tabs__list-item').click(function () {
+        $(element).find('.tabs__list-item').removeClass('active');
+        $(this).addClass('active');    
+        let num = $(this).index();
+        $(element).find('.tabs__content-list-item').removeClass('active');
+        $(element).find('.tabs__content-list-item').eq(num).addClass('active');  
+      });
+    }
+    tabs('.adresses__tabs');
+  }); //ready
+</script>
+
+<!-- <section>
+  <footer>
+    <div class="container footer-border-bot">
+      <div class="footer_list-items">
+        <div class="footer_list-item footer_list-item--1">
+          <a class="flogo" href="/"><img src="https://xn--80avidim.xn--p1ai/local/templates/polart/img/logosv.svg" alt=""></a>
+
+          <div class="logo__info">
+            <p><b>Салон напольных покрытий и интерьерного декора</b></p>
+            <p>Помогаем с выбором, доставляем и укладываем с 2016 года</p>
+          </div>
+
+          <div class="footer-soc_icons">
+            <a href="https://www.instagram.com/polart_shop/" rel="nofollow">
+              <img src="https://xn--80avidim.xn--p1ai/local/templates/polart/img/Instagram_black 2.png" alt="">
+            </a>
+            <a href="https://vk.com/polart_shop" rel="nofollow" >
+              <img src="https://xn--80avidim.xn--p1ai/local/templates/polart/img/VK_black 1.png" alt="">
+            </a>
+            <a href="https://www.youtube.com/@user-em1zc8vc7q" rel="nofollow">
+              <img src="https://xn--80avidim.xn--p1ai/local/templates/polart/img/Youtube_white 2.png" alt="">
+            </a>
+          </div>
+          <div class="consulting_btns footer-consult">
+            <a href="#" data-modal="modal_1" class="show_modal-call make_consult1">Подобрать покрытие</a>
+
+          </div>
+        </div>
+
+
+        <div class="footer_list-item ft23">
+
+          <div class="list-item-menu_title">
+            Адреса салонов
+          </div><div class="footer_makeEndflex ">
+            <div class="text-salone">
+              <span>ТРЦ KLP, 2 этаж: </span>
+              <p>г. Новосибирск, Площадь <br> К. Маркса, 6/1</p>
+              <a href="#" data-modal="modal_3" data-adress="https://yandex.ru/map-widget/v1/?um=constructor%3Ac76139d914779d203dd5e51a4323ab9aad690ae41cddb7d97143cb068ab18d60&amp;source=constructor" rel="nofollow" class="show_on_map-btn">Показать на карте</a>
+
+              <div class="phones_cmtus phones_cmtus-footer">
+                <a href="tel:+7(383)264-50-36">+7  (383)  264-50-36</a>
+                <div class="phones-cmtus_time">Ежедневно, 10:00-22:00</div>
+                <div class="imgs_phones-cmtus">
+                  <a href="https://wa.me/79137581548" rel="nofollow"><img src="https://xn--80avidim.xn--p1ai/local/templates/polart/img/wh1.png" alt=""></a>
+                  <a href="https://t.me/+79137581548" rel="nofollow"><img src="https://xn--80avidim.xn--p1ai/local/templates/polart/img/tg1.png" alt=""></a>
+                </div>
+              </div>
+            </div>
+            <div style="" class="text-salone">
+              <span>ТЦ Практика уюта, 2 этаж:  </span>
+              <p>г. Новосибирск, ​Проспект<br> Дзержинского, 1/4​</p>
+              <a href="#" data-modal="modal_3" data-adress="https://yandex.ru/map-widget/v1/?um=constructor%3Ac76139d914779d203dd5e51a4323ab9aad690ae41cddb7d97143cb068ab18d60&amp;source=constructor" rel="nofollow" class="show_on_map-btn">Показать на карте</a>
+
+              <div class="phones_cmtus phones_cmtus-footer">
+                <a href="tel:+7(383)263-15-17">+7  (383)  263-15-17</a>
+                <div class="phones-cmtus_time">Ежедневно, 10:00-22:00</div>
+                <div class="imgs_phones-cmtus">
+                  <a href="https://wa.me/79137581548" rel="nofollow"><img src="https://xn--80avidim.xn--p1ai/local/templates/polart/img/wh1.png" alt=""></a>
+                  <a href="https://t.me/+79137581548" rel="nofollow"><img src="https://xn--80avidim.xn--p1ai/local/templates/polart/img/tg1.png" alt=""></a>
+                </div>
+              </div>
+            </div></div>
+
+          </div>
+
+          <div class="footer_list-item _infos footer-infos">
+            <a href="tel:+73832645036" class="footer-infos__phone">+7 (383) 264-50-36</a>
+            <a target="_blank" href="https://t.me/polartsib" class="footer-infos__btn">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_10404_9200)">
+                  <path d="M12.2574 0.671875C9.1775 0.671875 6.22371 1.89537 4.04587 4.07322C1.86803 6.25106 0.644531 9.20484 0.644531 12.2848C0.644531 15.3647 1.86803 18.3185 4.04587 20.4963C6.22371 22.6742 9.1775 23.8977 12.2574 23.8977C15.3374 23.8977 18.2912 22.6742 20.469 20.4963C22.6468 18.3185 23.8703 15.3647 23.8703 12.2848C23.8703 9.20484 22.6468 6.25106 20.469 4.07322C18.2912 1.89537 15.3374 0.671875 12.2574 0.671875Z" fill="#FF8810" />
+                  <path d="M17.7784 6.84229L15.7241 17.4606C15.7241 17.4606 15.6359 17.9458 15.0414 17.9458C14.7255 17.9458 14.5627 17.7937 14.5627 17.7937L10.113 14.0557L7.93595 12.9448L5.14192 12.1925C5.14192 12.1925 4.64453 12.0471 4.64453 11.6307C4.64453 11.2837 5.15618 11.1183 5.15618 11.1183L16.8456 6.41702C16.845 6.41647 17.2026 6.28656 17.4631 6.28711C17.6232 6.28711 17.8058 6.35651 17.8058 6.5647C17.8058 6.70349 17.7784 6.84229 17.7784 6.84229Z" fill="white" />
+                  <path d="M11.7776 15.4523L9.89883 17.3254C9.89883 17.3254 9.81712 17.3892 9.70799 17.392C9.67015 17.3931 9.62957 17.387 9.58789 17.3681L10.1165 14.0566L11.7776 15.4523Z" fill="white" />
+                  <path d="M15.5584 8.61853C15.4658 8.49638 15.2947 8.47417 15.174 8.56689L7.9375 12.9515C7.9375 12.9515 9.0924 16.2228 9.26844 16.7892C9.44502 17.356 9.5865 17.3694 9.5865 17.3694L10.1151 14.0575L15.5069 9.00718C15.6275 8.91446 15.65 8.74068 15.5584 8.61853Z" fill="#B7ABA4" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_10404_9200">
+                    <rect width="24" height="24" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+              Подпишись
+            </a>
+
+            <div class="footer-infos__txt">😊Ого! Вы заметили , что у нас есть тг-канал? Подпишитесь и получите скидку!</div>
+          </div>
+
+        </div>
+        <div class="rights_block">
+          <span>Copyrigth 2023. Все права защищены</span>
+          <span>ИП Черных И.А. ИНН 880100650340</span>
+          <a href="/politika-konfidentsialnosti.php">Политика конфиденциальности</a>
+        </div>
+      </div>
+    </footer>
+  </section> -->
+
+
+
+
+  <link rel="stylesheet" href="css/conts.css">
+</body>
