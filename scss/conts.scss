@@ -236,6 +236,9 @@ $ff2: "Evolventa";
 .contc {
   color: #343434;
 }
+
+
+
 //2000
 
 @media (max-width : 1199px) {
@@ -404,4 +407,19 @@ $ff2: "Evolventa";
       width: 100%;
     }
   }
+}//374
+
+
+.proj1 {
+  margin-top: 45px;
+  padding-bottom: 100px;
+  @media (max-width : 1199px) {
+    margin-top: 30px;
+    padding-bottom: 70px;
+  }
+  @media (max-width : 575px) {
+    margin-top: 25px;
+    padding-bottom: 60px;
+  }
 }
+
